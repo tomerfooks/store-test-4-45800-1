@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS logs_db;
+USE logs_db;
+
+CREATE TABLE IF NOT EXISTS logs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  description VARCHAR(255),
+  method VARCHAR(10),
+  route VARCHAR(255),
+  duration_ms INT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

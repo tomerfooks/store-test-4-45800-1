@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Store API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:4000" }
+  ],
+  "item": [
+    {
+      "name": "All products",
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/products" }
+    },
+    {
+      "name": "Search by title",
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/search/jacket" }
+    },
+    {
+      "name": "Max price",
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/price/15" }
+    },
+    {
+      "name": "Min rating",
+      "request": { "method": "GET", "url": "{{baseUrl}}/api/rating/4.6" }
+    }
+  ]
+}
